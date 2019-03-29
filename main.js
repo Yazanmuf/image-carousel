@@ -1,8 +1,8 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false;
-const intervalTime = 5000;
+const auto = true;
+const intervalTime = 4000;
 let slideInterval;
 
 const nextSlide = () => {
@@ -44,7 +44,20 @@ const prevSlide = () => {
 // Button events
 next.addEventListener('click', e => {
     nextSlide();
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
 })
 prev.addEventListener('click', e => {
     prevSlide();
+    if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
 })
+
+//Auto slide
+if (auto) {
+    slideInterval = setInterval(nextSlide, intervalTime);
+}
