@@ -81,7 +81,7 @@ button#prev {
 }
 /* Background images */
 
-.slide:first-child {
+.slide:nth-child(1) {
     background: url('./images/Assetizr/image01-1600-65.jpg') no-repeat center center/cover;
 }
 

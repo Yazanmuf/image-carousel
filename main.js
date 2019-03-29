@@ -9,6 +9,7 @@ const nextSlide = () => {
 
     //Get current class
     const current = document.querySelector('.current');
+    console.log(current.classList.value)
     //Remove current class
     current.classList.remove('current');
     //check for next slide
@@ -38,3 +39,11 @@ const prevSlide = () => {
     }
     setTimeout(() => current.classList.remove('current'));
 }
+
+// Button events
+next.addEventListener('click', e => {
+    nextSlide();
+})
+prev.addEventListener('click', e => {
+    prevSlide();
+})
