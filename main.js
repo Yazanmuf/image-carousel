@@ -27,6 +27,7 @@ const prevSlide = () => {
 
     //Get current class
     const current = document.querySelector('.current');
+    console.log(current.classList.value)
     //Remove current class
     current.classList.remove('current');
     //check for previous slide

@@ -82,11 +82,11 @@ button#prev {
 /* Background images */
 
 .slide:nth-child(1) {
-    background: url('./images/Assetizr/image01-1600-65.jpg') no-repeat center center/cover;
+    background: url('./images/Assetizr/image02-1600-66.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(2) {
-    background: url('./images/Assetizr/image02-1600-66.jpg') no-repeat center top/cover;
+    background: url('./images/Assetizr/image01-1600-65.jpg') no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
